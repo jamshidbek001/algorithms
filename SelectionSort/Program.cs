@@ -8,6 +8,7 @@ Console.WriteLine($"Sorted Numbers:" + string.Join(",", sortedNumbers));
 TestReverseArray();
 TestFindSecondLargest();
 TestMergedSortArrays();
+TestContainsDuplicates();
 
 static int FindSmallest(List<int> arr)
 {
@@ -122,6 +123,23 @@ static void TestMergedSortArrays()
 }
 
 // TASK 4. Check if array contains duplicates
+static bool ContainsDuplicates(int[] arr)
+{
+    HashSet<int> seen = [];
+    foreach(int num in arr)
+    {
+        if(seen.Contains(num)) return true;
+        seen.Add(num);
+    }
+    return false;
+}
+
+static void TestContainsDuplicates()
+{
+    int[] arr = [1, 2, 3,4,5,6];
+    Console.WriteLine("Contains Duplicates: " + ContainsDuplicates(arr));
+    Console.WriteLine("----------------------------------------");
+}
 // TASK 5. // TASK 4. Check if array contains duplicates
 // Linked List Tasks
 // TASK 6.Implement a Singly Linked List
