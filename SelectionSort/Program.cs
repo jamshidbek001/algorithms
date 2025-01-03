@@ -6,6 +6,7 @@ List<int> sortedNumbers = SelectionSort(numbers);
 Console.WriteLine($"Sorted Numbers:" + string.Join(",", sortedNumbers));
 
 TestReverseArray();
+TestFindSecondLargest();
 
 static int FindSmallest(List<int> arr)
 {
@@ -59,6 +60,29 @@ static void TestReverseArray()
 }
 
 // TASK 2. Find second largest element
+static int FindSecondLargest(int[] arr)
+{
+    int largest = int.MinValue,secondLargest  = int.MinValue;
+    foreach(int num in arr)  // num = 10
+    {
+        if(num > largest)    // true
+        {
+            secondLargest = largest;
+            largest = num;   // 
+        }
+        else if(num > secondLargest && num != largest)
+        {
+            secondLargest = num;
+        }
+    }
+    return secondLargest;
+}
+
+static void TestFindSecondLargest()
+{
+    int[] arr = [10];
+    Console.WriteLine($"Second largest : " + FindSecondLargest(arr));
+}
 // TASK 3. Merge two sorted array
 // TASK 4. Check if array contains duplicates
 // TASK 5. // TASK 4. Check if array contains duplicates
