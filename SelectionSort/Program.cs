@@ -7,6 +7,7 @@ Console.WriteLine($"Sorted Numbers:" + string.Join(",", sortedNumbers));
 
 TestReverseArray();
 TestFindSecondLargest();
+TestMergedSortArrays();
 
 static int FindSmallest(List<int> arr)
 {
@@ -57,6 +58,7 @@ static void TestReverseArray()
     Console.WriteLine($"Original array : " + string.Join(",",array));
     ReverseArray(array);
     Console.WriteLine($"Reversed array : " + string.Join(",",array));
+    Console.WriteLine("----------------------------------------");
 }
 
 // TASK 2. Find second largest element
@@ -81,9 +83,44 @@ static int FindSecondLargest(int[] arr)
 static void TestFindSecondLargest()
 {
     int[] arr = [10];
-    Console.WriteLine($"Second largest : " + FindSecondLargest(arr));
+    Console.WriteLine($"Second largest element in array : " + FindSecondLargest(arr));
+    Console.WriteLine("----------------------------------------");
 }
 // TASK 3. Merge two sorted array
+static int[] MergeSortedArrays(int[] arr1,int[] arr2)
+{
+    int i = 0,j = 0;
+    List<int> merged = [];
+    
+    while(i < arr1.Length && j < arr2.Length)
+    {
+        if(arr1[i] < arr2[j])
+        {
+            merged.Add(arr1[i]);
+            i++;
+        }
+        else
+        {
+            merged.Add(arr2[j]);
+            j++;
+        }
+    }
+    while(i < arr1.Length) merged.Add(arr1[i++]);
+    while(j < arr2.Length) merged.Add(arr2[j++]);
+
+    return [.. merged];
+}
+
+static void TestMergedSortArrays()
+{
+    int[] arr1 = [1, 3, 5];
+    int[] arr2 = [2, 4, 6];
+    Console.WriteLine($"First original array : " + string.Join(",",arr1));
+    Console.WriteLine($"Second original array : " + string.Join(",",arr2));
+    Console.WriteLine($"Merged array : " + string.Join(",", MergeSortedArrays(arr1,arr2)));
+    Console.WriteLine("----------------------------------------");
+}
+
 // TASK 4. Check if array contains duplicates
 // TASK 5. // TASK 4. Check if array contains duplicates
 // Linked List Tasks
