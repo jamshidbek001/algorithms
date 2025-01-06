@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearch", "BinarySearc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSort", "SelectionSort\SelectionSort.csproj", "{44712D5F-7DC0-4488-9C65-CB907A197BEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leetcode", "Leetcode\Leetcode.csproj", "{F83E77AB-8BD5-4681-B9E1-82ED771ED008}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursion", "Recursion\Recursion.csproj", "{8EED9D72-B808-4FCD-B67D-344A22F3DF22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{44712D5F-7DC0-4488-9C65-CB907A197BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44712D5F-7DC0-4488-9C65-CB907A197BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44712D5F-7DC0-4488-9C65-CB907A197BEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F83E77AB-8BD5-4681-B9E1-82ED771ED008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F83E77AB-8BD5-4681-B9E1-82ED771ED008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F83E77AB-8BD5-4681-B9E1-82ED771ED008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F83E77AB-8BD5-4681-B9E1-82ED771ED008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EED9D72-B808-4FCD-B67D-344A22F3DF22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EED9D72-B808-4FCD-B67D-344A22F3DF22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EED9D72-B808-4FCD-B67D-344A22F3DF22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EED9D72-B808-4FCD-B67D-344A22F3DF22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

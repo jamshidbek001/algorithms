@@ -1,4 +1,4 @@
-﻿namespace Algorithms.SelectionSort;
+﻿namespace SelectionSort;
 
 class Program
 {
@@ -307,7 +307,7 @@ class Program
     {
         LinkedListMy list = new();
         list.Add(10);
-        list.Add(20);
+        list.Add(20);   
         list.Add(30);
 
         // Create a cycle for testing
